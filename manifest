@@ -73,7 +73,7 @@ p4_value=
 
 p5_MODE=
 p5_TYPE=TEXT
-p5_default_value=False
+p5_default_value=FALSE
 p5_description=Option to output images as .svg in addition to .png. For manuscript preparation, .svg format is preferable.
 p5_fileFormat=
 p5_flag=
