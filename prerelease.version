@@ -1,3 +1,5 @@
+#updated after building 1.7
+#Fri, 04 Apr 2025 10:59:22 -0400
 #updated after building 1.6
 #Wed, 26 Mar 2025 15:10:31 -0400
 #updated after building 1.5
@@ -22,4 +24,4 @@
 #Wed, 30 Aug 2023 12:05:35 -0400
 #updated after building -1.3
 #Wed, 30 Aug 2023 11:48:15 -0400
-prerelease.number=7
+prerelease.number=8
