@@ -144,7 +144,7 @@ p9_value=
 
 p10_MODE=
 p10_TYPE=TEXT
-p10_default_value=<DNA.sequences.to.annotate_basename>
+p10_default_value=output
 p10_description=Base name of the output files.
 p10_fileFormat=
 p10_flag=
