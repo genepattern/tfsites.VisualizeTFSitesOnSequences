@@ -1,4 +1,5 @@
 [
+  
     {
         "name": "Inputs and Outputs",
         "description": "Required Parameters",
@@ -7,9 +8,8 @@
             "DNA.sequences.to.annotate",
             "TF.affinity.information",
             "TF.affinity.files",
-            "batch.motif.input.file",
             "PWM.minimum.score",
-	    "PWM.binding.site.color",
+	        "PWM.binding.site.color",
             "output.filename"
         ]
     },
@@ -21,6 +21,20 @@
             "output.image.as.svg",
             "plot.resolution",
             "zoom.range"
+        ]
+    },
+    {
+        "name": "Motif Database Parameters",
+        "description": "Optional parameters for providing a motif database or generating motif database from JASPAR or HOMOCO data",
+        "hidden": false,
+        "parameters": [
+            "batch.motif.input.file",
+            "motif.input.file",
+            "motif.input.format",
+            "motif.filter.keywords",
+            "motif.use.pseudocounts",
+            "motif.background.frequencies",
+            "motif.output.name"
         ]
     }
 ]
