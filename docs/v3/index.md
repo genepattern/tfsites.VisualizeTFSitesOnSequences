@@ -39,8 +39,7 @@ If the user wishes to analyze only a portion of the sequence, then a zoom range 
     - File containing all the information for the transcription factors being analyzed. This includes the TF name, color, binding site definition, affinity reference data (optional), and minimum affinity (optional).
 - **TF affinity files (.tsv)**
     - File containing a list of affinity data referenced in the TF affinity information file.
-- **batch motif input file (.txt)**
-    - File containing PWMs to predict and score binding sites. This file can be obtained using `GenerateMotifDatabase`.
+
 - **PWM minimum score (float)**
     - `Default = 0.7`
     - PWM score required to predict a binding site. 
@@ -48,6 +47,28 @@ If the user wishes to analyze only a portion of the sequence, then a zoom range 
     - `Default = grey`
     - Color of sites scored by PWMs on the output visualization. Find color options [here](https://matplotlib.org/stable/gallery/color/named_colors.html).
 - <span style="color: red;">*</span>**output filename (string)**
+    - Base name of the output files.
+
+### Motif Database Parameters
+
+- **batch motif input file (.txt)**
+    - File containing PWMs to predict and score binding sites. This file can be obtained using `GenerateMotifDatabase`.
+    - 
+- **motif input file (.txt)**
+    - File containing multiple PFMs. It is formatted similar to a fasta file where the header line starts with ">" and is followed by that PFM. 
+- **motif filter keywords (.tsv)**
+    - `Default = None`
+    - File containing a single column with a list of keywords. The keywords can be the transcription factor name and/or matrix ID. 
+- **motif input format (boolean)**
+    - `Default = pfm`
+    - 	Specify whether input file contains PFMs or PWMs. Required if motif input file is provided.
+- **motif use pseudocounts (boolean)**
+  - `Default = False`
+  - Choose if you want to use pseudocounts to calculate the PWM score for binding sites.
+- **motif background frequencies (boolean)**
+    - `Default = 0.25,0.25,0.25,0.25`
+    - Choose the nucleotide background frequencies in the order of A, T, G, and C.
+- **motif output name (string)**
     - Base name of the output files.
 
 ### Other Parameters
