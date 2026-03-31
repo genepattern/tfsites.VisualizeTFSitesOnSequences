@@ -9,7 +9,6 @@ documentationUrl=https://genepattern.github.io/tfsites.VisualizeTFSitesOnSequenc
 fileFormat=
 job.cpuCount=2
 job.docker.image=genepattern/tfsites\:17.0.19
-job.memory=8GB
 language=any
 name=tfsites.VisualizeTFSitesOnSequences
 os=any
