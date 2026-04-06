@@ -10,6 +10,7 @@ fileFormat=
 language=any
 name=tfsites.VisualizeTFSitesOnSequences
 os=any
+job.docker.image=genepattern/tfsites\:18.0
 
 p1_MODE=IN
 p1_TYPE=FILE
@@ -243,4 +244,4 @@ src.repo=https://github.com/genepattern/tfsites.VisualizeTFSitesOnSequences/
 taskDoc=
 taskType=Transcription factor analysis
 userid=ted
-version=Updated docker container to v17.0.19.
+version=Updated docker container to v18.0.
