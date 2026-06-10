@@ -92,7 +92,7 @@ p6_name=motif.output.name
 p6_numValues=0..1
 p6_optional=on
 p6_prefix=
-p6_prefix_when_specified=--motif_output_name 
+p6_prefix_when_specified=--motif_output_name   
 p6_type=java.lang.String
 p6_value=
 
