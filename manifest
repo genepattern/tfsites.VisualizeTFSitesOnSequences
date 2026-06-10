@@ -247,7 +247,7 @@ p17_name=motif.exact.match
 p17_numValues=0..1
 p17_optional=on
 p17_prefix=
-p17_prefix_when_specified=--motif_exact_match
+p17_prefix_when_specified=--motif_exact_match   
 p17_type=java.lang.String
 p17_value=FALSE\=FALSE;TRUE\=TRUE
 
