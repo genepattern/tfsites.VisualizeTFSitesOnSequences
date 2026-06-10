@@ -2,7 +2,7 @@
 JVMLevel=
 LSID=urn:lsid:genepattern.org:module.analysis:00442
 author=Joe Salvasson, modified into a GenePattern module as Ted Liefeld
-commandLine=python /build/tfsites-webportal/03-visualizeTfSitesOnSequences/03-combined-generateMotifDatabase-and-visualizeTfSitesOnSequences.py <motif.input.file> <motif.input.format> <motif.filter.keywords> <motif.use.pseudocounts> <motif.background.frequencies> <motif.output.name> -d <DNA.sequences.to.annotate> <TF.affinity.information> <TF.affinity.files> <batch.motif.input.file> -m <PWM.minimum.score> -c <PWM.binding.site.color> -s <output.image.as.svg> -r <plot.resolution> <zoom.range> -o <output.filename>
+commandLine=python /build/tfsites-webportal/03-visualizeTfSitesOnSequences/03-combined-generateMotifDatabase-and-visualizeTfSitesOnSequences.py <motif.input.file> <motif.input.format> <motif.filter.keywords> <motif.use.pseudocounts> <motif.background.frequencies> <motif.output.name> <motif.exact.match> -d <DNA.sequences.to.annotate> <TF.affinity.information> <TF.affinity.files> <batch.motif.input.file> -m <PWM.minimum.score> -c <PWM.binding.site.color> -s <output.image.as.svg> -r <plot.resolution> <zoom.range> -o <output.filename>
 cpuType=any
 description=Annotates transcription factor binding sites across a DNA sequence with optional motif database generation. Multiple transcription factors can be analyzed. Each binding site is labeled with a unique binding site ID and its start and end position. If reference data is provided for a transcription factor, the affinity/score of this site will be labeled and the intensity of the binding site's color will be proportional. At least one of affinity information and files or batch motif files (or both) must be provided. If motif database parameters are provided, it will first generate a motif database and use it for visualization.
 documentationUrl=https://genepattern.github.io/tfsites.VisualizeTFSitesOnSequences/v3/
@@ -10,7 +10,7 @@ fileFormat=
 language=any
 name=tfsites.VisualizeTFSitesOnSequences
 os=any
-job.docker.image=genepattern/tfsites\:18.0
+job.docker.image=genepattern/tfsites\:19.0
 
 p1_MODE=IN
 p1_TYPE=FILE
@@ -236,6 +236,20 @@ p16_prefix=
 p16_prefix_when_specified=
 p16_type=java.lang.String
 p16_value=
+
+p17_MODE=
+p17_TYPE=TEXT
+p17_default_value=FALSE
+p17_description=Require the exact keyword to match. If false, TF families can be searched more easily (e.g. "ETS" will return "ETS1", "ets2", etc).
+p17_fileFormat=
+p17_flag=
+p17_name=motif.exact.match
+p17_numValues=0..1
+p17_optional=on
+p17_prefix=
+p17_prefix_when_specified=--motif_exact_match
+p17_type=java.lang.String
+p17_value=FALSE\=FALSE;TRUE\=TRUE
 
 
 privacy=public
