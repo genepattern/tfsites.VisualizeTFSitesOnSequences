@@ -1,15 +1,17 @@
 [
-  
+
     {
         "name": "Inputs and Outputs",
         "description": "Required Parameters",
         "hidden": false,
         "parameters": [
             "DNA.sequences.to.annotate",
+            "sequences.file.type",
+            "genome.file",
             "TF.affinity.information",
             "TF.affinity.files",
             "PWM.minimum.score",
-	        "PWM.binding.site.color",
+            "PWM.binding.site.color",
             "output.filename"
         ]
     },
