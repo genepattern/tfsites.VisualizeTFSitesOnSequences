@@ -64,7 +64,7 @@ p4_name=motif.use.pseudocounts
 p4_numValues=0..1
 p4_optional=on
 p4_prefix=
-p4_prefix_when_specified=--motif_use_pseudocounts
+p4_prefix_when_specified=--motif_use_pseudocounts  
 p4_type=java.lang.String
 p4_value=TRUE;FALSE
 
