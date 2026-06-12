@@ -56,7 +56,7 @@ p3_value=
 
 p4_MODE=
 p4_TYPE=TEXT
-p4_default_value=False
+p4_default_value=FALSE
 p4_description=Whether to use pseudocounts when generating motif database.
 p4_fileFormat=
 p4_flag=
@@ -64,9 +64,9 @@ p4_name=motif.use.pseudocounts
 p4_numValues=0..1
 p4_optional=on
 p4_prefix=
-p4_prefix_when_specified=--motif_use_pseudocounts 
+p4_prefix_when_specified=--motif_use_pseudocounts
 p4_type=java.lang.String
-p4_value=True;False
+p4_value=TRUE;FALSE
 
 p5_MODE=
 p5_TYPE=TEXT
